@@ -1,20 +1,22 @@
 head{
     text-align: center;
+    align-items:center;
 }
 
 body{
-   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
    text-align:center;
+   align-items:center;
 }
 
 header {
-    text-align:center;
-    color:blue;
-    padding: 20px 0;
+    font-weight:800;
+    color: red;
+    opacity: 200%;
+    padding: 30px 0;
 }
 
 header .row {
-    align-items: center;
     display:flex;
 }
 
@@ -26,42 +28,32 @@ header h1{
 
 .jumbotron {
   display: flex;
-  align-items: center;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/ChessStartingPosition.jpg/500px-ChessStartingPosition.jpg');
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/The_Comedy_Spot.jpg/500px-The_Comedy_Spot.jpg');
   background-size:cover;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 700px;
 }
 
 #subtitle{
-    text-align: center;
-    color:darkcyan;
+    color:purple;
 }
-.col-md-6 {
+.appetizer {
+  margin: 0 0 30px;
+}
+.entree {
   margin: 0 0 30px;
 }
 
 .container{
-    align-items: center;
     background-size:auto;
     
 }
 .container1{
-    align-items:center;
-    color:darkblue;
+    color:brown;
     background-size:auto;
 }
 
 .container2{
-    display: flex;
-    align-items: center;
+    color:greenyellow;
     background-size:auto;
-    background-color:beige;
-    height: 700px
-}
-.jokes{
-    text-align:center;
-}
-.list{
-    text-align:left;
 }
