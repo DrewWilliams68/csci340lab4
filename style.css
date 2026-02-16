@@ -1,1 +1,67 @@
-hi
+head{
+    text-align: center;
+}
+
+body{
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-align:center;
+}
+
+header {
+    text-align:center;
+    color:blue;
+    padding: 20px 0;
+}
+
+header .row {
+    align-items: center;
+    display:flex;
+}
+
+
+header h1{
+   font-weight: 300;
+   margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/ChessStartingPosition.jpg/500px-ChessStartingPosition.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+#subtitle{
+    text-align: center;
+    color:darkcyan;
+}
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.container{
+    align-items: center;
+    background-size:auto;
+    
+}
+.container1{
+    align-items:center;
+    color:darkblue;
+    background-size:auto;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    background-size:auto;
+    background-color:beige;
+    height: 700px
+}
+.jokes{
+    text-align:center;
+}
+.list{
+    text-align:left;
+}
