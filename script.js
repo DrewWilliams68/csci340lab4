@@ -3,11 +3,8 @@ function newJoke(){
       dataType: "json",
       url: "https://geek-jokes.sameerkumar.website/api?format=json",
       success: function(results) {
-        if (results["url"].endsWith(".mp4")) {
-          $('#start').attr("str", "Whats up!");
-        } else {
-          $('#jokes').text("didn't work");
-        }
+        console.log(results["joke"]);
+        $('#jokes').text(results["joke"]);
       },
       error: function(xhr,status,error) {
         console.log(error);
@@ -21,13 +18,11 @@ function newJoke(){
 function newEntree(){
     $.ajax({
       dataType: "json",
-      url: " https://foodish-api.com/images/pizza/",
+      url: "https://foodish-api.com/api",
       success: function(results) {
-        if (results["url"].endsWith(".mp4")) {
-          $('#finish').attr("src", "https://tse1.mm.bing.net/th/id/OIP.3f4uw03GjHN2wa2tSeNc4wHaIu?pid=Api&P=0&h=220");
-        } else {
-          $('#finish').attr("src", results["url"]);
-        }
+        console.log(results);
+          $('#finish').attr("src", results["image"]);
+        
       },
       error: function(xhr,status,error) {
         console.log(error);
@@ -38,13 +33,9 @@ function newEntree(){
 function newAppetizer(){
     $.ajax({
       dataType: "json",
-      url: " https://foodish-api.com/images/pizza/",
+      url: "https://foodish-api.com/api",
       success: function(results) {
-        if (results["url"].endsWith(".mp4")) {
-          $('#app').attr("src", "images/blank.png");
-        } else {
-          $('#app').attr("src", results["url"]);
-        }
+        $("#start").attr("src", results["image"]);
       },
       error: function(xhr,status,error) {
         console.log(error);
